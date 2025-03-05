@@ -9,7 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'FirstProject';
+  imageUrl:string = "image.png"
 
   
-  message:String = "Hello from BridgeLabzz"
+  message:String = "Hello from BridgeLabz"
 }
