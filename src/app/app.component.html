@@ -3,9 +3,12 @@
         Hello World!
     </h1>
     <h2>
-        {{message}}
+        Hello {{name}} from BridgeLabz
     </h2>
     <div class="image">
         <img [src]="imageUrl" alt="Ankit" (click)="onClick()" >
+    </div>
+    <div class="input">
+        Input for Name : <input type="text" [(ngModel)]="name">
     </div>
 </div>
