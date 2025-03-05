@@ -10,7 +10,11 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'FirstProject';
   imageUrl:string = "image.png"
+  url:string="https://www.bridgelabz.com/";
 
   
   message:String = "Hello from BridgeLabz"
+  onClick(){
+    window.open(this.url,"_blank");
+  }
 }
