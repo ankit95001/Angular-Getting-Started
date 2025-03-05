@@ -12,11 +12,20 @@ export class AppComponent {
   title = 'FirstProject';
   imageUrl:string = "image.png"
   url:string="https://www.bridgelabz.com/";
-  name:String="";
+  name:string="";
+  errorMessage:String="";
 
   
   message:String = "Hello from BridgeLabz"
   onClick(){
     window.open(this.url,"_blank");
+  }
+  onInput(){
+    const nameRegex = RegExp('^[A-Z]{1}[a-z\\s]{2,}$')
+    if(nameRegex.test(this.name)){
+      this.errorMessage="";
+      return;
+    }
+    this.errorMessage="Name is not valid!"
   }
 }

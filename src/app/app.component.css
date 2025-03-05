@@ -1,7 +1,19 @@
-.image{
+.container{
     display: block;
     margin: 0 auto;
-    width: 25%;
-    border: 2px solid black;
+    justify-items: center;
+}
+
+.image{
     cursor: pointer;
+}
+.error{
+    color: red;
+    margin-left: 10px;
+}
+h1{
+    color: red;
+}
+h2{
+    color: yellowgreen;
 }

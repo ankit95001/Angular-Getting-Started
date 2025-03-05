@@ -9,6 +9,9 @@
         <img [src]="imageUrl" alt="Ankit" (click)="onClick()" >
     </div>
     <div class="input">
-        Input for Name : <input type="text" [(ngModel)]="name">
+        Input for Name : <input type="text" (input)="onInput()" [(ngModel)]="name">
+        <span class="error">
+            {{errorMessage}}
+        </span>
     </div>
 </div>
